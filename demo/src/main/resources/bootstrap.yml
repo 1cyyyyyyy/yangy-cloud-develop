@@ -1,16 +1,32 @@
-server:
-  servlet:
-    context-path: /
+#server:
+#  servlet:
+#    context-path: /
+#
+#spring:
+#  application:
+#    name: demoservice
+#  profiles:
+#    active: dev #开发环境，这里是dev
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848 # Nacos地址
+#      discovery:
+#        ephemeral: false # 设置为非临时实例
+#        enabled: true
+#        service: ${spring.application.name}
+#      config:
+#        enabled: true
+#        encode: UTF-8
+#        file-extension: yaml # 文件后缀名
+
 
 spring:
   application:
-    name: demo
+    name: demoservice # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
   cloud:
     nacos:
-      discovery:
-        enabled: true
-        service: ${spring.application.name}
+      server-addr: localhost:8848 # Nacos地址
       config:
-        enabled: true
-        encode: UTF-8
-        file-extension: yml
+        file-extension: yaml # 文件后缀名

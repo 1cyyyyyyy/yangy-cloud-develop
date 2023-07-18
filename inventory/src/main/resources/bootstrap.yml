@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: inventory-service
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        service: ${spring.application.name}
+      config:
+        enabled: true
+        encode: UTF-8
+        file-extension: yml

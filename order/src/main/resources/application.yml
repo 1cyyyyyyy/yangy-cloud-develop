@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+
+
+inventoryservice:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则
