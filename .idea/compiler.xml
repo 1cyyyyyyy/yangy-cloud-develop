@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="inventory" />
         <module name="demo" />
+        <module name="gateway" />
         <module name="order" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="inventory" options="-parameters" />
       <module name="order" options="-parameters" />
     </option>
